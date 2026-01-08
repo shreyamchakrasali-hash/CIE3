@@ -1,10 +1,10 @@
-import pytest
-def account_details(acc_number,holder_name, acc_type, balance, ):
+
+def account_details(acc_number,holder_name,acc_type,balance):
     result = (
-        f"Account_Number:{acc_number}\n"
-        f"Holder_Name:{holder_name}\n"
-        f"Account_Type:{acc_type}\n"
-        f"Balance:{balance}\n"
+        f"acc_number:{acc_number}\n"
+        f"holder_name:{holder_name}\n"
+        f"acc_type:{acc_type}\n"
+        f"balance:{balance}\n"
        
     )
     return result
@@ -14,4 +14,4 @@ if __name__ == "__main__":
     holder_name="Vaishnavi"
     acc_type="Savings"
     balance=1000.50
-    print(account_details(acc_number, holder_name, acc_type, balance))
+    print(account_details(acc_number,holder_name,acc_type,balance))
